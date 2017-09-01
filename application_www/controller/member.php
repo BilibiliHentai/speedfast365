@@ -41,9 +41,14 @@ class Controller_member extends Action {
 			if(empty($form_pwd)){
 				$error['form_pwd'] = "请输入密码";
 			}
+			elseif(!preg_match('/^\w+$/',$form_pwd)){
+				$error['form_pwd'] = "密码不能带有除字母数字外的特殊字符";
+			}
 			elseif(strlen($form_pwd) < 6){
 				$error['form_pwd'] = "不建议小于6位";
 			}
+
+
 
 			if(!empty($error)){
 				$this->form_error = $error;
@@ -57,7 +62,7 @@ class Controller_member extends Action {
 					$db->update("user",array("passwd"=>$form_pwd),array("id={$ss_user_id}"));
 
 
-					$error['form_pwd'] = "修改成功";
+					$error['form_pwd'] = "修改成功，此改动生效需要大约3分钟";
 
 					$this->form_error = $error;
 				}
@@ -610,7 +615,7 @@ class Controller_member extends Action {
 				echo "已经发送验证码";
 			}
 			else{
-				echo "出现错误，请重试或联系技术售后QQ";
+				echo "系统分析，您需要人工验证，请联系技术售后QQ";
 			}
 			die();
 
@@ -656,7 +661,7 @@ class Controller_member extends Action {
 
 				if(empty($error)){
 
-					$dateline_min = time() - 1800;
+					$dateline_min = time() - 900;
 					
 					if(!empty($member_id)){
 

@@ -38,14 +38,6 @@ class Controller_index extends Action {
 
 	public function action_status(){
 
-		$db = Db::instance();
-
-		$time = time();
-	
-		$custmer_no = $db->fetchOne("select count(*) from user where expire_dateline > {$time} and enable = 1");
-
-		echo "<pre>\nstatus:{$custmer_no}\n</pre>";
-
 		die();	
 
 	}

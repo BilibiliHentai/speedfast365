@@ -50,7 +50,34 @@ $ss_user = $this->ss_user;
 			</div>
 		</div>
    </div>
+   <div class="panel panel-default" >
 
+		<div class="panel-heading">
+                 <h3 class="panel-title"><i class="fa fa-paper-plane-o fa-fw" aria-hidden="true"></i>您的私人剪贴板导入码:</h3>
+                </div>
+
+		<div class="panel-body">
+		
+			<div style="margin:10px;">
+				服务器地址：<?php echo $_GET['ip']; ?>
+			</div>
+
+			<?php if(!empty($qrstring)):?>
+			<div style="margin:10px;">
+			<input type="text" onclick="this.select();" value="<?php echo $qrstring; ?>" style="width:99%;" />
+			</div>
+			<?php else:?>
+			<div style="margin:10px;width:99%;">
+			<font color="red">充值后显示</font> 
+			</div>
+			<?php endif;?>
+
+			<div style="margin:10px;">
+				
+				支持：剪贴板导入
+			</div>
+		</div>
+   </div>
    <div class="panel panel-default" >
 
 		<div class="panel-heading">

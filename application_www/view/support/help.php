@@ -31,7 +31,7 @@ Windows客户端
 <div class="col-md-7 middle">
     
 
-<?php require APPLICATION_PATH . '/view/support/inc.introduce.php';?>
+<?php require APPLICATION_PATH . '/view/support/help.win.inc.php';?>
 <?php /* require APPLICATION_PATH . '/view/support/inc.introduce.divice.php';*/?>
 
     
@@ -114,7 +114,7 @@ Windows客户端
 
 
 
-<?php elseif($type == 'mac_fast'):?>
+<?php elseif($type == 'mac'):?>
 
 <div class="container">
 
@@ -169,7 +169,8 @@ Mac客户端
 
 <h4>常见问题：</h4>
 <ol>
-<li>如果不能打开facebook，请换一个浏览器试试；或者重启电脑；哪个浏览器不行，就重新安装那个浏览器。</li>
+<li>注意一般要先彻底退出Safari浏览器（右键点击Dock栏Safari图标--退出），然后再打开Safari浏览器，系统才会加载新的代理设置，才可以上google。</li>
+<li>别的哪个浏览器不行，就重新安装那个浏览器，如果有别的代理软件或插件，就可能冲突，需要关闭。</li>
 <li>请确保你的mac os版本不低于10.10，否则请升级系统。</li> 
 </ol>
 
@@ -197,7 +198,7 @@ Mac客户端
 
 
 
-<?php elseif($type == 'mac'):?>
+<?php elseif($type == 'mac_pro'):?>
 
 <div class="container">
 
@@ -225,7 +226,7 @@ Mac客户端
 
 <h4>Shadowsocks手动配置(高级)图文教程</h4>
 <ol>
-<li>如果你觉得下面的图文说明太复杂或麻烦，那就请点击这里：<a href="/support/help/?type=mac_fast">简单快速导入配置教程</a></li>
+<li>如果你觉得下面的图文说明太复杂或麻烦，那就请点击这里：<a href="/support/help/?type=mac">简单快速导入配置教程</a></li>
 <li>到：系统偏好设置---系统性与安全隐私--通用标签栏，如下图，将“允许从以下位置下载的应用”选为“Appstore和被认可的开发者”。
 <li><img src="/static/pic_mac_help/4.png" /></li>
 <li>点击这里：<a href="/static/dl/ShadowsocksX-NG.1.5.1.zip">ShadowsocksX-NG.1.5.1.zip</a>，下载客户端文件，如下图，一个名为ShadowsocksX-NG.1.5.1.zip的文件：</li>
@@ -432,11 +433,11 @@ Android客户端
 
 
 <h1>
-iPhone、iPad(iOS)客户端
+iPhone客户端
 </h1>
 
 <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-<li id="breadcrumb-menu-home" property="itemListElement" typeof="ListItem"><a href="/" property="item" typeof="WebPage"><span property="name">首页</span></a></li><li id="breadcrumb-menu-support" property="itemListElement" typeof="ListItem"><a href="/support/" property="item" typeof="WebPage"><span property="name">支持</span></a></li><li id="breadcrumb-menu-support-帮助" property="itemListElement" typeof="ListItem"><a href="/support/help/" property="item" typeof="WebPage"><span property="name">帮助</span></a></li><li id="breadcrumb-menu-support-帮助-iPhone(iOS)客户端" property="itemListElement" typeof="ListItem"><a href="/support/help/?type=iphone" property="item" typeof="WebPage"><span property="name">iPhone(iOS)客户端</span></a></li>
+<li id="breadcrumb-menu-home" property="itemListElement" typeof="ListItem"><a href="/" property="item" typeof="WebPage"><span property="name">首页</span></a></li><li id="breadcrumb-menu-support" property="itemListElement" typeof="ListItem"><a href="/support/" property="item" typeof="WebPage"><span property="name">支持</span></a></li><li id="breadcrumb-menu-support-帮助" property="itemListElement" typeof="ListItem"><a href="/support/help/" property="item" typeof="WebPage"><span property="name">帮助</span></a></li><li id="breadcrumb-menu-support-帮助-iPhone(iOS)客户端" property="itemListElement" typeof="ListItem"><a href="/support/help/?type=iphone" property="item" typeof="WebPage"><span property="name">iPhone客户端</span></a></li>
 </ol>
 
 </div>
@@ -455,7 +456,7 @@ iPhone、iPad(iOS)客户端
 <ol>
 
 <li>iPhone需要配合专用的app使用我们的线路，这里使用Shadowrocket这款app。到App Store中搜索Shadowrocket下载（该app是付费的，价格18元人民币，和本站没有利益关系，钱是软件作者收的，没办法，免费又好用的找不到。其它app和这个使用方法差不多，也可参考该教程）<br />
-<font color="red">如果中国区搜不到Shadowrocket，就到美区找。美区的apple id你可以搜网上教程自己申请，也可以到某宝上购买（顺便代充值美金)，关键词“美区apple id”。</font><font color="blue">翻墙不容易，祝一切顺利！</font>
+<font color="red">如果中国区搜不到Shadowrocket，就到美区找。美区的apple id你可以搜网上教程自己申请，也可以到某宝上购买（顺便让掌柜代充值美金)，关键词“美区apple id”。</font><font color="blue">翻墙不容易，祝一切顺利！</font>
 <br />
 下载安装完成后，如下图：
 </li>

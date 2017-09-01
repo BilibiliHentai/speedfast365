@@ -102,7 +102,7 @@ function login_submit(){
 	<h4>提示：</h4>
 	<ol>
 	<li>忘记账号请点此<a href="/member/findemail">找回登录邮箱</a></li>
-	<li>忘记密码请联系客服QQ</li>
+	<li>忘记密码请点此<a href="/member/findpwd">找回密码</a></li>
 	</ol>
 
     

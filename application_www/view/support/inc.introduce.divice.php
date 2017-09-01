@@ -1,12 +1,3 @@
-<h4>各主流设备Shadowsocks使用图文说明</h4>
-<ul>
-<li><a href="/support/help/?type=windows">Windows客户端使用帮助</a></li>
-<li><a href="/support/help/?type=mac">Mac客户端使用帮助</a></li>
-<li><a href="/support/help/?type=android">Android客户端使用帮助</a></li>
-<li><a href="/support/help/?type=iphone">iPhone客户端使用帮助</a></li>
-</ul>
-
-
 
 <h4>Windows懒人版客户端</h4>
 
@@ -33,8 +24,10 @@ Speedfast365客户端 会自动最小化至屏幕右下角通知区域(初始化
 右键点击屏幕右下角图标--“更多配置和信息”，可以勾选“开机启动”，这样就更方便了。
 </li>
 <li>
-如果一个浏览器不行，就换一个浏览器。哪个浏览器不行，就重新安装那个浏览器。
+然后，用IE浏览器打开https://www.google.com测试下是否能够正常访问。
 </li>
+<li>如果不能打开google、facebook等，请先换IE浏览器试试；别的哪个浏览器不行，就重新安装那个浏览器。</li>
+<li>不建议使用360浏览器。推荐使用Chrome浏览器、firefox浏览器。</li>
 </ol>
 
 

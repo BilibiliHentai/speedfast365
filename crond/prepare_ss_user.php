@@ -3,13 +3,15 @@ include_once dirname(__file__) . '/crond_init.php';
 
 $db = Db::instance();
 
+$db->exec("update user set prepare = 4,enable = 0,enable_server = 0,expire_dateline = 0 where prepare = 1 and u > 0");
+
 $prepare_user = $db->fetchAll("select * from user where prepare = 1");
 
 $prepare_user_total = count($prepare_user);
 
-if($prepare_user_total < 7){
+if($prepare_user_total < 20){
 
-	for($i=1;$i<=3;$i++){
+	//for($i=1;$i<=2;$i++){
 
 		$max_port = $db->fetchOne("select max(port) as max_port from user");
 		
@@ -30,7 +32,7 @@ if($prepare_user_total < 7){
 		$db->insert("user",$ss_bind);
 
 
-	}
+	//}
 
 }
 

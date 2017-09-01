@@ -93,3 +93,9 @@ Define('DOMAIN_NAME','speedfast365.com');
 
 //以下是墙内域名配置(你配置如上同一个也无妨）
 Define('DOMAIN_NAME_CN','speedfast365-001.com');
+
+//以下SMTP配置信息，用来向用户发送验证码，找回密码之用
+Define('SMTP_HOST','smtp.139.com');//example
+Define('SMTP_USER','yourusername');
+Define('SMTP_PWD','yourpasswd');
+

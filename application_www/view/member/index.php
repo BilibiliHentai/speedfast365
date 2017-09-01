@@ -327,8 +327,15 @@ $server_list = $this->server_list;
   </div>
 **/?>
 
-<?php  require APPLICATION_PATH . '/view/support/inc.introduce.divice.php';?>
+<h4>各主流设备Shadowsocks使用图文说明</h4>
+<ul>
+<li><a href="/support/help/?type=windows">Windows客户端使用帮助</a></li>
+<li><a href="/support/help/?type=mac">Mac客户端使用帮助</a></li>
+<li><a href="/support/help/?type=android">Android客户端使用帮助</a></li>
+<li><a href="/support/help/?type=iphone">iPhone客户端使用帮助</a></li>
+</ul>
 
+<?php  require APPLICATION_PATH . '/view/support/inc.introduce.divice.php';?>
 
 	</div>
 

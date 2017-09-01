@@ -11,10 +11,8 @@ class Model_SendMail{
 
 	public function send($to,$subject,$body){
 
-		//ykfzt@139.com----dslhzh3tcb
-
-		$sender = "vtbhd@139.com";
-		$password = "z74lp4cakg";
+		$sender = SMTP_USER;
+		$password = SMTP_PWD;
 
 		include_once(LIBRARY_PATH . "/PHPMailer/PHPMailerAutoload.php");
 		
@@ -23,7 +21,7 @@ class Model_SendMail{
 		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 		$mail->isSMTP();                                      // Set mailer to use SMTP
-		$mail->Host = 'smtp.139.com';  // Specify main and backup SMTP servers
+		$mail->Host = SMTP_HOST;  // Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
 		$mail->Username = $sender;                 // SMTP username
 		$mail->Password = $password;                           // SMTP password

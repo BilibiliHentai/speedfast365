@@ -28,6 +28,12 @@
 <h3>Windows</h3>
 <ul>
 
+<li><strong><span>懒人版客户端下载:</span></strong>
+<ul>
+<li><span><a href="/static/dl/Speedfast365-3.3.0.1.exe">免配置客户端-Speedfast365-3.3.0.1</a></span></li>
+</ul>
+</li>
+
 
 <li><strong><span>Shadowsocks用户下载:</span></strong>
 <ul>
@@ -36,12 +42,6 @@
 <li><span><a href="/static/dl/Shadowsocks-win-2.5.6.best.zip">Shadowsocks-2.5.6.zip(经典稳定版)</a></span></li>
 
 <li><span><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank">其他版本</a></span></li>
-</ul>
-</li>
-
-<li><strong><span>懒人版客户端下载:</span></strong>
-<ul>
-<li><span><a href="/static/dl/Speedfast365-3.3.0.1.exe">免配置客户端-Speedfast365-3.3.0.1</a></span></li>
 </ul>
 </li>
 

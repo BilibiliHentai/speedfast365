@@ -18,14 +18,13 @@ class Crond_Remote_Traffic_IPtable{
 
 		$server_list = $db->fetchAll("select * from server_front where is_hidden = 0");
 
-		//test 12800 	
-		//$user_port_list = $db->fetchAll("select * from user where port > 12420 and port < 12430");
-		//$user_port_list = $db->fetchAll("select * from user where port > 11420 and port < 11430");
-		$user_port_list = $db->fetchAll("select * from user where port >0 and enable_server = 1");
-		
+		//$user_port_list = $db->fetchAll("select * from user where port >0 and enable_server = 1");
+		$user_port_list = $db->fetchAll("select * from user where port >0 and enable = 1");
+	
 		
 		foreach($server_list as $server){
 			echo "server_ip:{$server['ip_address']}\n";
+			echo "port:".count($user_port_list)."\n";	
 			$this->update_traffic_and_acl($server,$user_port_list);
 		}
 		
@@ -104,6 +103,8 @@ class Crond_Remote_Traffic_IPtable{
 			$shell_ports_sh = "shell_ports_{$server_ip}.sh";
 
 			file_put_contents($shell_ports_sh,$shell_update_str);
+			
+			shell_exec('ssh -o ConnectTimeout=5 root@'.$server_ip.' "pkill -f '.$shell_ports_sh.'"');
 			
 			$result = shell_exec('scp -o ConnectTimeout=5 '.$shell_ports_sh.' root@'.$server_ip.':~/'.$shell_ports_sh);
 	
@@ -261,7 +262,9 @@ class Crond_Remote_Traffic_IPtable{
 
 	public function update_traffic_into_db($iptable_data){
 		
-		$threshold = 0;
+		$threshold_min = 102400;
+
+		$threshold_max = 1024 * 1024 * 1024 * 100;
 
 		$bytes_output = 0;
 		$bytes_input = 0;
@@ -269,7 +272,8 @@ class Crond_Remote_Traffic_IPtable{
 		$db = Db::instance();
 		$array_input_traffic_data = array();	
 		foreach($iptable_data['input'] as $v){
-			if($v['traffic'] > $threshold && $v['act'] == 'ACCEPT'){
+			//if($v['traffic'] > $threshold_min && $v['act'] == 'ACCEPT'){
+			if($v['traffic'] > $threshold_min && $v['traffic'] < $threshold_max && $v['act'] == 'ACCEPT'){
 				if(!empty($array_input_traffic_data["{$v['port']}"])){
 					$array_input_traffic_data["{$v['port']}"] += $v['traffic'];
 				}
@@ -284,7 +288,8 @@ class Crond_Remote_Traffic_IPtable{
 
 		$array_output_traffic_data = array();
 		foreach($iptable_data['output'] as $v){
-			if($v['traffic'] > $threshold && $v['act'] == 'ACCEPT'){
+			//if($v['traffic'] > $threshold_min && $v['act'] == 'ACCEPT'){
+			if($v['traffic'] > $threshold_min && $v['traffic'] < $threshold_max && $v['act'] == 'ACCEPT'){
 				if(!empty($array_output_traffic_data["{$v['port']}"])){
 					$array_output_traffic_data["{$v['port']}"] += $v['traffic'];
 				}
