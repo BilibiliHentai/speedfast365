@@ -10,6 +10,7 @@
 四、设置服务器与节点之间的通信
 五、启动各节点的shadowsocks服务
 六、设置中心服务器的crontab
+七、支付宝订单同步器
 
 正文：
 ==============================================================================================
@@ -81,4 +82,6 @@ https://github.com/ShenYinjie/shadowsocks_manyuser_speedfast365
 
 (在进行该步骤之前，请确保网站已经可以正常访问、注册、充值，并且会员的线路可以自动开通）
 
-将本项目更目录的crontab复盖 /etc/crontab   然后使用命令 /etc/init.d/cron reload  使crondtab立即生效 
+将本项目更目录的crontab复盖 /etc/crontab   然后使用命令 /etc/init.d/cron reload  使crondtab立即生效
+
+七、支付宝订单监控同步器：http://easypay.myshopex.com/ 
