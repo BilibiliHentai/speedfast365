@@ -10,10 +10,16 @@
 如果提示“需要安装.NET Framework”，则请<a target="_blank" href="/static/dl/net.framework.4.6.1.exe">点击此处</a>下载并安装.NET Framework后，再打开Speedfast365客户端。
 </li>
 <li>
-Speedfast365客户端 会自动最小化至屏幕右下角通知区域(初始化可能需要1分钟，请耐心等待)。
+打开 Speedfast365客户端 会自动最小化至屏幕右下角通知区域(初始化可能需要1分钟，请耐心等待)。
+<br />
+然后如下图，右键右下角图标，选择登录
+<br />
+<img src="/static/image/divice_win_ico.png" />
 </li>
 <li>
-出现登录框后，使用Speedfast365上注册的帐号和密码登录，程序又会自动最小化在右下角。
+如下图，出现登录框后，使用Speedfast365上注册的帐号和密码登录，程序又会自动最小化在右下角。
+<br />	
+<img src="/static/image/divice_win_login.png" />
 </li>
 <li>
 点击右下角图标，出现界面，如下图，点击“开启系统代理“，就好了。

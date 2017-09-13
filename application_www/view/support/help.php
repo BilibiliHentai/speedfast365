@@ -456,7 +456,7 @@ iPhone客户端
 <ol>
 
 <li>iPhone需要配合专用的app使用我们的线路，这里使用Shadowrocket这款app。到App Store中搜索Shadowrocket下载（该app是付费的，价格18元人民币，和本站没有利益关系，钱是软件作者收的，没办法，免费又好用的找不到。其它app和这个使用方法差不多，也可参考该教程）<br />
-<font color="red">如果中国区搜不到Shadowrocket，就到美区找。美区的apple id你可以搜网上教程自己申请，也可以到某宝上购买（顺便让掌柜代充值美金)，关键词“美区apple id”。</font><font color="blue">翻墙不容易，祝一切顺利！</font>
+<font color="red">如果中国区搜不到Shadowrocket，就到美区找。美区的apple id你可以搜网上教程自己申请，也可以到某宝上购买（顺便让掌柜代充值美金)，某宝搜索关键词“美区 apple”，然后出现许多美区apple id充值和账户。</font><font color="blue">翻墙不容易，祝一切顺利！</font>
 <br />
 下载安装完成后，如下图：
 </li>

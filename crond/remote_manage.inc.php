@@ -262,7 +262,7 @@ class Crond_Remote_Traffic_IPtable{
 
 	public function update_traffic_into_db($iptable_data){
 		
-		$threshold_min = 102400;
+		$threshold_min = 102400 * 5;
 
 		$threshold_max = 1024 * 1024 * 1024 * 100;
 

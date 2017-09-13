@@ -28,6 +28,9 @@
 <h3>Windows</h3>
 <ul>
 
+<li><a href="/support/help/?type=windows" target="_blank">Windows-图文教程与客户端下载</a> </li>
+
+
 <li><strong><span>懒人版客户端下载:</span></strong>
 <ul>
 <li><span><a href="/static/dl/Speedfast365-3.3.0.1.exe">免配置客户端-Speedfast365-3.3.0.1</a></span></li>
@@ -41,7 +44,7 @@
 
 <li><span><a href="/static/dl/Shadowsocks-win-2.5.6.best.zip">Shadowsocks-2.5.6.zip(经典稳定版)</a></span></li>
 
-<li><span><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank">其他版本</a></span></li>
+<li><span><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank">其他版本-Github</a></span></li>
 </ul>
 </li>
 
@@ -49,16 +52,14 @@
 </ul>
 <h3>Mac OS X</h3>
 <ul>
+<li><a href="/support/help/?type=mac" target="_blank">Mac-图文教程与客户端下载</a> </li>
 <li>ShadowsocksX-NG: OS X 10.10+ : 
 <ul>
 <li><a href="/static/dl/ShadowsocksX-NG.1.5.1.zip">高速本地下载: ShadowsocksX-NG.1.5.1.zip</a></li>
 <li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases/download/v1.5.1/ShadowsocksX-NG.1.5.1.zip" rel="nofollow">GitHub: ShadowsocksX-NG.1.5.1</a>  </li>
-<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank">其他版本</a></li>
+<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank">其他版本-Github</a></li>
 </ul>
 </li>
-<?php /*
-<li>ShadowsocksX: <a href="https://github.com/shadowsocks/shadowsocks-iOS/releases/download/2.6.3/ShadowsocksX-2.6.3.dmg">2.6.3.dmg</a> （没人维护了，如果你的mac os版本低于10.10，用这个）</li>
-**/?>
 <li>ShadowsocksX: <a href="/static/dl/ShadowsocksX-2.6.3.dmg">2.6.3.dmg</a> （没人维护了，如果你的mac os版本低于10.10，用这个）</li>
 </ul>
 <h3>Android</h3>
@@ -67,12 +68,16 @@
 
 
 <ul>
+<li><a href="/support/help/?type=android" target="_blank">Android-图文教程与客户端下载</a> </li>
 <li>本地下载：<a target="_blank" href="<?php echo $url; ?>">shadowsocks-nightly-4.1.8.apk</a>。</li>
 <li>github下载：<a target="_blank" href="https://github.com/shadowsocks/shadowsocks-android/releases/download/v4.1.8/shadowsocks-nightly-4.1.8.apk">shadowsocks.4.1.8.apk</a>。</li>
 </ul>
-<h3>iOS</h3>
+<h3>iPhone</h3>
 <ul>
+<li><a href="/support/help/?type=iphone" target="_blank">iPhone-图文教程与客户端下载</a> </li>
+<?php /**
 <li><a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8" target="_blank">App Store: Shadowrocket</a> </li>
+**/?>
 </ul>
 <h3>Linux</h3>
 <p><strong>GUI Client</strong></p>
